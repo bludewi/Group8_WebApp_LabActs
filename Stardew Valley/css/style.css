@@ -5,7 +5,7 @@
     --text-brown: #4a2f13;
     --text-white: #ffffff;
     --text-black: #000000;
-    --accent-orange: #d97706;
+    --accent-orange: #EDAB22;
     --hover-yellow: #ffee98;
 }
 
@@ -34,7 +34,7 @@ body {
     color: var(--text-white);
     text-decoration: none;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 900;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
@@ -79,26 +79,47 @@ body {
 .hero-subtitle {
     color: var(--text-white);
     font-size: 18px;
-    font-weight: bold;
+    font-family:'Verdana', 'Arial', sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 15px 0 30px 0; 
+    margin: 35px 0 30px 0;
     line-height: 1.5;
 }
 
-.download-btn, .view-more-btn {
+.download-btn {
     display: inline-block;
-    background: url('../images/button.png') center / 100% 100% no-repeat;
-    color: var(--text-brown);
+    width: 267px;
+    height: 58px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: var(--text-black);
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 30px;
+    font-size: 20px;
+    font-family:'Verdana', 'Arial', sans-serif;
+    padding: 5px 30px;
     text-align: center;
     transition: transform 0.1s ease;
 }
 
-.view-more-btn { font-size: 16px; }
-.download-btn:hover, .view-more-btn:hover { transform: scale(1.03); }
+.view-more-btn {
+    display: inline-block;
+    width: 212px;
+    height: 43px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: var(--text-black);
+    font-size: 20px;
+    padding: 5px 30px;
+    font-family:'Verdana', 'Arial', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+
+}
+
+.download-btn:hover, .view-more-btn:hover { transform: scale(1.03);
+background-color: d9d9d9
+}
 
 /* Features */
 .intro-section, .features-section, .gallery-section, .trailer-section {
@@ -114,13 +135,15 @@ body {
 }
 
 .intro-title {
+    font-family:'Courier New', Courier, monospace;
     color: var(--accent-orange);
     font-size: 28px;
     margin-bottom: 15px; 
 }
 
 .intro-text, .features-list p {
-    color: var(--text-brown);
+    color: var(--text-black);
+    font-family:'Verdana', 'Arial', sans-serif;
     font-size: 18px;
     margin: 0;
 }
@@ -155,8 +178,9 @@ body {
 .features-title {
     display: inline-block;
     background: url('../images/scroll1.png') center / 100% 100% no-repeat;
-    color: var(--text-brown);
-    font-size: 22px;
+    color: var(--text-white);
+    font-size: 26px;
+    font-weight: 900;
     padding: 15px 60px;
     margin: 0;
 }
@@ -182,7 +206,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .features-list li {
@@ -192,7 +216,7 @@ body {
 }
 
 .features-list p {
-    font-weight: bold;
+    font-family:'Verdana', 'Arial', sans-serif;
     line-height: 1.4;
 }
 
@@ -200,7 +224,7 @@ body {
     position: relative;
     display: flex;
     align-items: flex-end;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 /* Left column */
@@ -216,13 +240,13 @@ body {
 }
 
 /* Right column */
-.feature-tree { width: 150px; display: block; }
+.feature-tree { width: 210px; display: block; }
 
 .feature-npc {
     position: absolute;
-    left: -45px;
-    bottom: 0;
-    width: 75px;
+    left: -55px;
+    bottom: 50px;
+    width: 140px;
 }
 
 /* Gallery and Trailer */
@@ -237,7 +261,7 @@ body {
 
 .gallery-header, .trailer-header {
     position: absolute;
-    top: -5px;      
+    top: -35px;      
     left: -10px;    
     display: flex;
     align-items: center;
@@ -254,6 +278,7 @@ body {
 .gallery-title, .trailer-title {
     color: var(--text-white); 
     font-size: 32px;
+    font-weight: 900;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
@@ -327,10 +352,9 @@ body {
 .about-footer { text-align: center; }
 
 .about-footer p {
+    font-family:'Verdana', 'Arial', sans-serif;
     color: var(--text-black);
     font-size: 15px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     margin: 0;
 }
 
