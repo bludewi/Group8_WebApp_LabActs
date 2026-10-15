@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuro Kitchen - Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;700&family=Langar&family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Floating Navigation Header -->
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/kuro_kitchen_logo.png" alt="Kuro Kitchen Logo" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="menupage.html" class="active">MENU</a>
+            <a href="#">GALLERY</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="header-action">
+            <a href="#" id="orderBtnHeader">ORDER NOW</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Menu Header / Foods Showcase Section -->
+        <section class="menu-hero-section">
+            <div class="menu-hero-image-container">
+                <img src="images/foods.jpg" alt="Delicious Japanese Foods" class="foods-showcase-img">
+            </div>
+
+            <div class="wave-divider">
+                <img src="images/wave_divider.png" alt="Wave Divider" class="wave-img">
+            </div>
+        </section>
+
+        <!-- Descriptive Text Banner Placed Above the Sub-Navigation Bar -->
+        <div class="menu-banner-section">
+            <div class="menu-banner-container">
+                <p>Filled with authentic Japanese dishes, crafted with fresh ingredients and traditional artistry to delight your senses.</p>
+            </div>
+        </div>
+
+        <!-- Menu Sub-Navigation Bar -->
+        <div class="menu-subnav-bar">
+            <div class="subnav-title">MENU</div>
+            <div class="subnav-links-container">
+                <a href="#" class="active-category">STARTERS</a>
+                <a href="#">BENTO BOXES</a>
+                <a href="#">SUSHI & SASHIMI</a>
+                <a href="#">DESSERTS & REFRESHMENTS</a>
+            </div>
+        </div>
+
+        <!-- START OF MANUAL GRADIENT WRAPPER -->
+        <div class="menu-gradient-container">
+
+            <!-- Horizontal Scroll Carousel Section: Starters -->
+            <section class="menu-carousel-section">
+                <div class="scroll-track" id="menuScrollTrack">
+                    
+                    <!-- Intro Slanted Box -->
+                    <div class="carousel-intro-box">
+                        <h2 class="carousel-intro-title">Starters</h2>
+                        <p class="carousel-intro-desc">Enjoy a delightful selection of traditional Japanese starters.</p>
+                        <div class="swipe-arrow">
+                            <svg width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="0" y1="12" x2="20" y2="12"></line>
+                                <polyline points="14 6 20 12 14 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Edamame Item -->
+                    <div class="carousel-item first-item">
+                        <div class="carousel-img-container">
+                            <img src="images/edamame.png" alt="Edamame" class="carousel-img edamame-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥850</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">EDAMAME</div>
+                            <div class="carousel-item-desc">Steamed soybean pods dusted with flaky sea salt or spicy garlic chili.</div>
+                        </div>
+                    </div>
+
+                    <!-- Agedashi Tofu Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/agedashi_tofu.png" alt="Agedashi Tofu" class="carousel-img tofu-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,300</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">AGEDASHI TOFU</div>
+                            <div class="carousel-item-desc">Crispy fried tofu blocks served in warm, savory dashi broth with grated daikon and bonito flakes.</div>
+                        </div>
+                    </div>
+
+                    <!-- Gyoza Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/gyoza.png" alt="Gyoza" class="carousel-img gyoza-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,900</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">GYOZA</div>
+                            <div class="carousel-item-desc">Pan-seared pork or vegetable dumplings served with a tangy soy-vinegar dipping sauce.</div>
+                        </div>
+                    </div>
+
+                    <!-- Chicken Karaage Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/chicken_karaage.png" alt="Chicken Karaage" class="carousel-img karaage-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,700</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">CHICKEN<br>KARAAGE</div>
+                            <div class="carousel-item-desc">Japanese-style crispy fried chicken thigh nuggets served with a squeeze of fresh lemon and spicy kewpie mayo.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Transition Space Banner -->
+            <div class="category-transition-banner"></div>
+
+            <!-- Bento Boxes Horizontal Carousel Section -->
+            <section class="menu-carousel-section bento-carousel">
+                <div class="scroll-track" id="bentoScrollTrack">
+                    
+                    <!-- Bento Boxes Food Items (Black Background / Left Side) -->
+                    <div class="carousel-item bento-item first-bento-item">
+                        <div class="carousel-img-container bento-container">
+                            <img src="images/beef_yakiniku_bento.png" alt="Beef Yakiniku Bento" class="carousel-img bento-img yakiniku-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,300</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title bento-title">BEEF<br>YAKINIKU<br>BENTO</div>
+                            <div class="carousel-item-desc">Tender, thinly sliced beef stir-fried with onions in a sweet, savory, and smoky Japanese barbecue sauce.</div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bento-item">
+                        <div class="carousel-img-container bento-container">
+                            <img src="images/chicken_katsu_bento.png" alt="Chicken Katsu Bento" class="carousel-img bento-img katsu-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,100</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title bento-title">CHICKEN<br>KATSU<br>BENTO</div>
+                            <div class="carousel-item-desc">Pan-seared pork or vegetable dumplings served with a tangy soy-vinegar dipping sauce.</div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bento-item last-bento-item">
+                        <div class="carousel-img-container bento-container">
+                            <img src="images/salmon_teriyaki_bento.png" alt="Salmon Teriyaki Bento" class="carousel-img bento-img salmon-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥3,400</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title bento-title">SALMON<br>TERIYAKI<br>BENTO</div>
+                            <div class="carousel-item-desc">Grilled Atlantic salmon glazed in house-made teriyaki sauce.</div>
+                        </div>
+                    </div>
+
+                    <!-- Intro Slanted Box (Beige Background / Right Side) -->
+                    <div class="carousel-intro-box bento-intro-box">
+                        <h2 class="carousel-intro-title">Bento Boxes</h2>
+                        <p class="carousel-intro-desc">Try our bento boxes, packed with a tasty mix of Japanese favorites in one meal.</p>
+                        <div class="swipe-arrow reversed-arrow">
+                            <svg width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="24" y1="12" x2="4" y2="12"></line>
+                                <polyline points="10 6 4 12 10 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Transition Space Banner -->
+            <div class="category-transition-banner"></div>
+
+            <!-- Horizontal Scroll Carousel Section: Sushi & Sashimi -->
+            <section class="menu-carousel-section">
+                <div class="scroll-track" id="sushiScrollTrack">
+                    
+                    <!-- Intro Slanted Box -->
+                    <div class="carousel-intro-box">
+                        <h2 class="carousel-intro-title">Sushi &<br>Sashimi</h2>
+                        <p class="carousel-intro-desc">Packed with fresh sushi and sashimi, made to give you a tasty treat.</p>
+                        <div class="swipe-arrow">
+                            <svg width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="0" y1="12" x2="20" y2="12"></line>
+                                <polyline points="14 6 20 12 14 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Dragon Roll Item -->
+                    <div class="carousel-item first-item">
+                        <div class="carousel-img-container">
+                            <img src="images/dragon_roll.png" alt="Dragon Roll" class="carousel-img dragon-roll-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥4,000</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">DRAGON<br>ROLL</div>
+                            <div class="carousel-item-desc">Steamed soybean pods dusted with flaky sea salt or spicy garlic chili.</div>
+                        </div>
+                    </div>
+
+                    <!-- Small Chef's Sashimi Selection Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/sashimi_selection.png" alt="Small Chef's Sashimi Selection" class="carousel-img sashimi-selection-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥2,800</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">SMALL CHEF'S<br>SASHIMI<br>SELECTION</div>
+                            <div class="carousel-item-desc">Features prime, delicate, slices of seasonal fresh fish (Tuna, Salmon, and White Fish).</div>
+                        </div>
+                    </div>
+
+                    <!-- Ball-Shaped Sushi Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/ball_shaped_sushi.png" alt="Ball-Shaped Sushi" class="carousel-img ball-sushi-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥3,000</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">BALL-SHAPED<br>SUSHI</div>
+                            <div class="carousel-item-desc">Bite-sized, colorful sushi pressed tightly into perfect spheres.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Transition Space Banner -->
+            <div class="category-transition-banner"></div>
+
+            <!-- Desserts Horizontal Carousel Section -->
+            <section class="menu-carousel-section bento-carousel">
+                <div class="scroll-track" id="dessertsScrollTrack">
+                    
+                    <!-- Matcha Mochi Ice Cream Item -->
+                    <div class="carousel-item bento-item first-bento-item">
+                        <div class="carousel-img-container">
+                            <img src="images/matcha_ice_cream.png" alt="Matcha Mochi Ice Cream" class="carousel-img matcha-mochi-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,000</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title bento-title">MATCHA<br>MOCHI<br>ICE CREAM</div>
+                            <div class="carousel-item-desc">Sweet pounded rice dough wrapped around rich green tea ice cream.</div>
+                        </div>
+                    </div>
+
+                    <!-- Chilled Matcha Pudding Item -->
+                    <div class="carousel-item bento-item">
+                        <div class="carousel-img-container">
+                            <img src="images/matcha_pudding.png" alt="Chilled Matcha Pudding" class="carousel-img matcha-pudding-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,100</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title bento-title">CHILLED MATCHA<br>PUDDING</div>
+                            <div class="carousel-item-desc">Silky green tea custard topped with a sweet red bean paste rosette.</div>
+                        </div>
+                    </div>
+
+                    <!-- Yuzu Cheesecake Item -->
+                    <div class="carousel-item bento-item last-bento-item">
+                        <div class="carousel-img-container">
+                            <img src="images/yuzu.png" alt="Yuzu Cheesecake" class="carousel-img yuzu-cheesecake-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥1,300</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title bento-title">YUZU<br>CHEESECAKE</div>
+                            <div class="carousel-item-desc">A light, airy cheesecake infused with the bright, citrusy tang of Japanese yuzu.</div>
+                        </div>
+                    </div>
+
+                    <!-- Intro Slanted Box (Beige Background / Right Side) -->
+                    <div class="carousel-intro-box bento-intro-box">
+                        <h2 class="carousel-intro-title">Desserts</h2>
+                        <p class="carousel-intro-desc">Savor our delicious Japanese desserts, the perfect finish to your dining experience.</p>
+                        <div class="swipe-arrow reversed-arrow">
+                            <svg width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="24" y1="12" x2="4" y2="12"></line>
+                                <polyline points="10 6 4 12 10 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Transition Space Banner -->
+            <div class="category-transition-banner"></div>
+
+            <!-- Horizontal Scroll Carousel Section: Refreshments -->
+            <section class="menu-carousel-section">
+                <div class="scroll-track" id="refreshmentsScrollTrack">
+                    
+                    <!-- Intro Slanted Box -->
+                    <div class="carousel-intro-box">
+                        <h2 class="carousel-intro-title">Refreshments</h2>
+                        <p class="carousel-intro-desc">Enjoy our refreshing Japanese beverages, the perfect way to complement your meal.</p>
+                        <div class="swipe-arrow">
+                            <svg width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="0" y1="12" x2="20" y2="12"></line>
+                                <polyline points="14 6 20 12 14 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Iced Hojicha Latte Item -->
+                    <div class="carousel-item first-item">
+                        <div class="carousel-img-container">
+                            <img src="images/latte.png" alt="Iced Hojicha Latte" class="carousel-img hojicha-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥900</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">ICED HOJICHA<br>LATTE</div>
+                            <div class="carousel-item-desc">A refreshing iced latte with roasted hojicha tea, creamy milk, and a hint of sweetness.</div>
+                        </div>
+                    </div>
+
+                    <!-- Cold Brew Sencha Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/sencha.png" alt="Cold Brew Sencha" class="carousel-img sencha-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥650</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">COLD BREW<br>SENCHA</div>
+                            <div class="carousel-item-desc">Premium iced green tea, slowly steeped for a crisp flavor profile.</div>
+                        </div>
+                    </div>
+
+                    <!-- Cream Soda Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/cream_soda.png" alt="Cream Soda" class="carousel-img cream-soda-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥850</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">CREAM<br>SODA</div>
+                            <div class="carousel-item-desc">Vibrant green melon-flavored soda poured over ice, topped with a floating scoop of vanilla bean ice cream and maraschino cherry.</div>
+                        </div>
+                    </div>
+
+                    <!-- Amazake Item -->
+                    <div class="carousel-item">
+                        <div class="carousel-img-container">
+                            <img src="images/amazake.png" alt="Amazake" class="carousel-img amazake-img" draggable="false">
+                        </div>
+                        <div class="carousel-price">¥700</div>
+                        <div class="carousel-text-row">
+                            <div class="carousel-item-title">AMAZAKE</div>
+                            <div class="carousel-item-desc">A smooth, naturally sweet, non-alcoholic fermented rice refreshment served ice-cold.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Transition Space Banner -->
+            <div class="category-transition-banner"></div>
+        </div> 
+        <!-- END OF MANUAL GRADIENT WRAPPER -->
+
+        <!-- NEW CALL TO ACTION SECTION: FOUND SOMETHING YOU LIKE? -->
+        <section class="cta-section">
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <h2>FOUND SOMETHING YOU LIKE?</h2>
+                <a href="#" class="cta-order-btn">ORDER NOW</a>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="site-footer-bottom">
+            <div class="footer-content-container">
+                <div class="footer-logo-col">
+                    <img src="images/kuro_kitchen_logo.png" alt="Kuro Kitchen Logo" class="footer-logo">
+                </div>
+                
+                <div class="footer-links-group">
+                    <div class="footer-nav-col">
+                        <h4>NAVIGATION</h4>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="menupage.html">MENU</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social-col">
+                        <h4>PRESS INQUIRIES</h4>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#">
+                                    <img src="images/instagram.png" alt="Instagram Icon" class="social-icon">
+                                    <span>INSTAGRAM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/facebook.png" alt="Facebook Icon" class="social-icon">
+                                    <span>FACEBOOK</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 Kuro Restaurant, LLC. All rights Reserved</p>
+            </div>
+        </footer>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
